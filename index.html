@@ -3,12 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Calendar</title>
   <link rel="stylesheet" href="./src/style.css">
+  <!-- <script src="./src/index.js" defer></script> -->
 </head>
 <body>
   <div class="wrap">
-    <div>Calendar</div>
+    <section class="title"><h1>Calendar</h1></section>
+    <section class="calenderPart">
+      <div class="selectedDay">
+        <h3 id="selected-whatDay">Friday</h3>
+        <h1 id="selected-date">27</h1>  
+      </div>
+      <div class="calender">
+        <div class="monthHandler">
+          <button id="lastBtn"><</button>
+          <div id="thisMonthAndYear">
+            <span id="thisMonth"></span>
+            <span id="thisYear"></span>
+          </div>
+          <button id="nextBtn">></button>
+        </div>
+        <table>
+          <tbody>
+            <tr id="whatDay">
+              <th id="sunday" scope="col">S</th>
+              <th>M</th>
+              <th>T</th>
+              <th>W</th>
+              <th>T</th>
+              <th>F</th>
+              <th id="saturday" scope="col">S</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="todoPart"></section>
   </div>
 </body>
 <script src="./src/index.js"></script>

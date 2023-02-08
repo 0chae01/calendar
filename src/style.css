@@ -1,13 +1,67 @@
 /* 가운데 정렬을 위한 코드이니 되도록 건들지 않는 것을 추천합니다. */
 body {
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 }
 
 .wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 /* 이 아래부터는 필요에 따라 삭제, 변경해도 됩니다 */
+.calenderPart {
+  display: flex;
+}
+
+.selectedDay {
+  width: 100px;
+  height: 190px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calender {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.monthHandler {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+button {
+  /* border-color: white;
+  background-color: white; */
+  border-radius: 10px;
+  border-style: none;
+}
+
+button:hover {
+  background-color: skyblue;
+}
+
+#thisMonthAndYear {
+  margin: 8px;
+}
+
+table {
+  text-align: center;
+}
+
+#sunday {
+  color: red;
+}
+
+#saturday {
+  color: rgb(56, 56, 172);
+}
