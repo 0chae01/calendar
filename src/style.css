@@ -17,13 +17,18 @@ body {
 }
 
 .selectedDay {
-  width: 100px;
+  width: 150px;
   height: 190px;
-  margin: 10px;
+  margin: 0 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#selected-date {
+  font-size: 100px;
+  margin: 10px 10px;
 }
 
 .calender {
@@ -63,5 +68,5 @@ table {
 }
 
 #saturday {
-  color: rgb(56, 56, 172);
+  color: darkblue;
 }
